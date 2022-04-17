@@ -10,11 +10,7 @@
         name: wireshark
         state: latest
 
-<<<<<<< HEAD
-- name: update LB servers
-=======
 - name: update LB server
->>>>>>> prj-11
   hosts: lb, db
   remote_user: ubuntu
   become: yes
@@ -28,3 +24,4 @@
       apt:
         name: wireshark
         state: latest
+#comment
