@@ -11,8 +11,5 @@
 [lb]
 172.31.5.208 ansible_ssh_user='ubuntu'
 
-<<<<<<< HEAD
 # my servers
-=======
 # maintaingit 
->>>>>>> prj-11
