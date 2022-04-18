@@ -5,10 +5,16 @@
   become: yes
   become_user: root
   tasks:
-    - name: ensure wireshark is at the latest version
+    - name: Update yum repo
+      yum: 
+        update_cache: yes
+
+    - name: Ensure wireshark is at the latest version
       yum:
         name: wireshark
         state: latest
+
+#----------------------------------------------------
 
 - name: update LB server
   hosts: lb, db
@@ -24,4 +30,3 @@
       apt:
         name: wireshark
         state: latest
-#comment
