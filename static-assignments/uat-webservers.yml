@@ -1,0 +1,4 @@
+---
+- hosts: uatwebservers
+- roles:
+     - webservers
