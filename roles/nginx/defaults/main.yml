@@ -95,3 +95,7 @@ nginx_log_format: |-
 
 enable_nginx_lb: false
 load_balancer_is_required: false
+
+lb_name: "myapp1"
+web1: "172.31.16.53"
+web2: "172.31.22.57"
